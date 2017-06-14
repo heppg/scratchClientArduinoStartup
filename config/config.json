@@ -1,0 +1,53 @@
+{  
+  "devices":  [ 
+                    { "os": "win",    "device" : "COM6"  },
+                    { "os": "win",    "device" : "COM7"  }, 
+                    { "os": "win",    "device" : "COM19" },
+                    
+                    { "os": "linux2", "device" : "/dev/ttyUSB0" },
+                    { "os": "linux2", "device" : "/dev/ttyUSB1" }
+                ],
+  
+  "configs":    [
+	               { 
+	                 "description": "example 1, start here",
+	                 "file": "config_appl_001.xml",
+	                 "idents": [  
+	                            {  "ident":  "NANO_000" , "alias": "DEVICE_A" } 
+	                           ]
+	               },
+	               
+	               {  
+	                 "description": "example 2, need two arduino",             
+	                 "file": "config_appl_002.xml",
+	                 "idents": [  
+	                            {  "ident":  "NANO_001" , "alias": "DEVICE_A" } ,
+	                            {  "ident":  "NANO_003" , "alias": "DEVICE_B" }
+	                           ]
+	                },
+	                
+	                {              
+	                  "description": "example 3",
+	                  "file": "config_appl_003.xml",
+	                  "idents": [ 
+	                             { "ident":  "NANO_XYZ" , "alias": "DEVICE_A" }
+	                            ]
+	                },
+	                
+	                { 
+	                 "description": "example 4",
+	                 "file": "config_appl_004.xml",
+	                 "idents": [  
+	                            {  "ident":  "NANO_000" , "alias": "DEVICE_A" } 
+	                           ]
+	                },
+	                
+                    { 
+                     "description": "example 5",
+                     "file": "config_appl_004.xml",
+                     "idents": [  
+                                {  "ident":  ".*" , "alias": "DEVICE_A" } 
+                               ]
+                   }
+                ]
+}

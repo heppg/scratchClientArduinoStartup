@@ -1,0 +1,8 @@
+Raspberry Pi Installation
+
+Installation von pyqt4
+    sudo apt-get install python-qt4
+    
+for creator, install
+    sudo apt-get install qt4-dev-tools
+    sudo apt-get install qtcreator
